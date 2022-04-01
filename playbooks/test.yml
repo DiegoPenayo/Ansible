@@ -1,0 +1,9 @@
+- name: Install GIT
+  hosts: Test
+  become: True #para elevear a permisos root el usuario ansible
+
+  tasks:
+  - name: Install GIT
+    ansible.builtin.yum: #a esto se llama modulo, hay uno por cada tarea/s
+      name: git #nombre del paquete a instalar en linux
+      state: present
