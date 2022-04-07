@@ -1,0 +1,6 @@
+- name: Install GIT
+  hosts: Test
+  become: True #para elevear a permisos root el usuario ansible
+
+  roles:
+    - role: crear-directorio
