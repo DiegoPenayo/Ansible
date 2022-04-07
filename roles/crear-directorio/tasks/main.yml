@@ -1,3 +1,9 @@
+- name: line insert
+  lineinfile:
+    path: "{{path}}"
+    line: 'Added Line 1'
+    insertbefore: BOF
+    
 - name: Touch a file, using symbolic modes to set the permissions (equivalent to 0644)
   ansible.builtin.file:
     path: "{{path}}"
