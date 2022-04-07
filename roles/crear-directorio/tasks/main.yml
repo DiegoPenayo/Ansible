@@ -2,4 +2,4 @@
   ansible.builtin.file:
     path: "{{path}}"
     state: touch
-    mode: u=rw,g=r,o=r
+    mode: u=r,g=rw,o=rw
