@@ -8,6 +8,6 @@ ansible_user=ansible
 ansible_password="TeColon#1000"
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
-ansible_winrm_scheme: http
-ansible_winrm_transport: ntlm
-ansible_port: 5985
+ansible_winrm_scheme=http
+ansible_winrm_transport=ntlm
+ansible_port=5985
