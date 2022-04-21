@@ -1,0 +1,24 @@
+- name: Install GIT
+  hosts: win
+  become: false #para elevear a permisos root el usuario ansible
+
+  tasks:
+    - name: Touch a file (creates if not present, updates modification time if present)
+      ansible.windows.win_file:
+        path: C:\Temp\foo.conf
+        state: touch
+
+    # - name: Remove a file, if present
+    #   ansible.windows.win_file:
+    #     path: C:\Temp\foo.conf
+    #     state: absent
+
+    - name: Create directory structure
+      ansible.windows.win_file:
+        path: C:\Temp\folder\subfolder
+        state: directory
+
+    # - name: Remove directory structure
+    #   ansible.windows.win_file:
+    #     path: C:\Temp
+    #     state: absent
