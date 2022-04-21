@@ -20,10 +20,10 @@
     #     path: C:\Temp\foo.conf
     #     state: absent
 
-    - name: Create directory structure
-      win_file:
-        path: C:\Temp\folder\subfolder
-        state: directory
+    # - name: Create directory structure
+    #   win_file:
+    #     path: C:\Temp\folder\subfolder
+    #     state: directory
 
     # - name: Remove directory structure
     #   ansible.windows.win_file:
