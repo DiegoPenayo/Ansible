@@ -3,6 +3,13 @@
   become: false #para elevear a permisos root el usuario ansible
 
   tasks:
+
+    - name: Create directory structure
+      win_file:
+        path: C:\Temp\folder\subfolder
+        state: directory
+        
+
     - name: Touch a file (creates if not present, updates modification time if present)
       win_file:
         path: C:\Temp\foo.conf
